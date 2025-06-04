@@ -1,0 +1,9 @@
+<launch>
+  <!-- Static transform: base_footprint -> laser_link -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="static_tf_base_to_laser" args="0 0 0 0 0 0 1 base_footprint laser_link" />
+
+  <!-- Hector Mapping SLAM -->
+  <include file="$(find hector_mapping)/launch/mapping_default.launch">
+    <arg name="pub_map_odom_transform" value="false"/>
+  </include>
+</launch>
