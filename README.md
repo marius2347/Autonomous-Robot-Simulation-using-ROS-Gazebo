@@ -5,7 +5,6 @@ This repository provides a complete ROS/Gazebo setup for simulating a six-wheele
 
 ## Repository Structure
 ```
-.
 ├── urdf/
 │   └── robot.urdf.xacro               # Robot description (6WD, steerable front wheels, camera, laser)
 ├── src/
